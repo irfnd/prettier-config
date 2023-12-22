@@ -1,0 +1,12 @@
+{
+	"name": "@irfnd/prettier-config",
+	"version": "1.0.0",
+	"description": "Personal prettier config",
+	"main": "index.json",
+	"keywords": [
+		"prettier",
+		"prettier-config"
+	],
+	"author": "Irfandi Iqbal Abimanyu <irfandiabimanyu@gmail.com>",
+	"license": "MIT"
+}
