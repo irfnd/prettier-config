@@ -23,6 +23,6 @@ pnpm add @irfnd/prettier-config -D
 ```jsonc
 {
 	// ...
-	"prettier": "@irfnd/prettier-config"
+	"prettier": "@irfnd/prettier-config",
 }
 ```

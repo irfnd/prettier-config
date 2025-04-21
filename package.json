@@ -2,11 +2,18 @@
 	"name": "@irfnd/prettier-config",
 	"version": "1.0.0",
 	"description": "Personal prettier config",
-	"main": "index.json",
+	"type": "module",
+	"main": "index.js",
 	"keywords": [
 		"prettier",
 		"prettier-config"
 	],
 	"author": "Irfandi Iqbal Abimanyu <irfandiabimanyu@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"peerDependencies": {
+		"prettier": "^3.5.3"
+	}
 }
