@@ -1,11 +1,9 @@
-/**
- * @see https://prettier.io/docs/configuration
- * @type {import("prettier").Config}
- */
-const config = {
+import { Config } from 'prettier';
+
+const config: Config = {
 	endOfLine: 'lf',
 	jsxSingleQuote: true,
-	printWidth: 125,
+	printWidth: 130,
 	semi: true,
 	singleQuote: true,
 	tabWidth: 2,
