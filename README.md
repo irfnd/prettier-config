@@ -21,13 +21,12 @@ pnpm add @irfnd/prettier-config -D
 **Edit (`.prettierrc.js`/`prettier.config.js`)**:
 
 ```js
-{
-	import irfndConfig from '@irfnd/prettier-config';
+import irfndConfig from '@irfnd/prettier-config';
 
-	const config = {
-		...irfndConfig,
-	};
+const config = {
+	...irfndConfig,
+	// your custom config
+};
 
-	export default config;
-}
+export default config;
 ```

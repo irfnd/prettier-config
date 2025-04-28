@@ -1,6 +1,6 @@
 {
 	"name": "@irfnd/prettier-config",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "Personal prettier config",
 	"type": "module",
 	"main": "dist/index.js",
@@ -8,7 +8,7 @@
 		"prettier",
 		"prettier-config"
 	],
-	"author": "Irfandi Iqbal Abimanyu <irfandiabimanyu@gmail.com>",
+	"author": "Irfnd <irfandiabimanyu@gmail.com>",
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc"
