@@ -18,11 +18,16 @@ yarn add @irfnd/prettier-config -D
 pnpm add @irfnd/prettier-config -D
 ```
 
-**Edit `package.json`**:
+**Edit (`.prettierrc.js`/`prettier.config.js`)**:
 
-```jsonc
+```js
 {
-	// ...
-	"prettier": "@irfnd/prettier-config",
+	import irfndConfig from '@irfnd/prettier-config';
+
+	const config = {
+		...irfndConfig,
+	};
+
+	export default config;
 }
 ```
