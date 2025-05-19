@@ -1,14 +1,4 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"module": "NodeNext",
-		"moduleResolution": "nodenext",
-		"declaration": true,
-		"outDir": "./dist",
-		"baseUrl": "./src",
-		"strict": true,
-		"typeRoots": ["./node_modules/@types"]
-	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules", "dist"]
+	"references": [{ "path": "./tsconfig.esm.json" }, { "path": "./tsconfig.cjs.json" }],
+	"files": []
 }

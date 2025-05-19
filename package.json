@@ -1,17 +1,24 @@
 {
 	"name": "@irfnd/prettier-config",
-	"version": "1.2.2",
+	"version": "1.3.0",
 	"description": "Personal prettier config",
 	"type": "module",
-	"main": "dist/index.js",
 	"keywords": [
 		"prettier",
 		"prettier-config"
 	],
 	"author": "Irfnd <irfandiabimanyu@gmail.com>",
 	"license": "MIT",
+	"main": "./dist/cjs/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/types/index.d.ts",
+	"exports": {
+		"import": "./dist/esm/index.js",
+		"require": "./dist/cjs/index.js",
+		"default": "./dist/esm/index.js"
+	},
 	"scripts": {
-		"build": "tsc"
+		"build": "rm -rf build && tsc -b"
 	},
 	"peerDependencies": {
 		"prettier": "^3.5.3"
