@@ -23,7 +23,8 @@
 		}
 	},
 	"scripts": {
-		"build": "unbuild"
+		"build": "unbuild",
+		"prepublishOnly": "npm run build"
 	},
 	"peerDependencies": {
 		"prettier": "^3.5.3"
