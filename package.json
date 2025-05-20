@@ -1,29 +1,32 @@
 {
 	"name": "@irfnd/prettier-config",
-	"version": "1.3.0",
-	"description": "Personal prettier config",
-	"type": "module",
+	"version": "1.4.0",
+	"description": "Irfnd personal prettier config",
 	"keywords": [
 		"prettier",
 		"prettier-config"
 	],
 	"author": "Irfnd <irfandiabimanyu@gmail.com>",
-	"license": "MIT",
-	"main": "./dist/cjs/index.js",
-	"module": "./dist/esm/index.js",
-	"types": "./dist/types/index.d.ts",
+	"main": "dist/index.cjs",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
 	"exports": {
-		"import": "./dist/esm/index.js",
-		"require": "./dist/cjs/index.js",
-		"default": "./dist/esm/index.js"
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
 	},
 	"scripts": {
-		"build": "rm -rf build && tsc -b"
+		"build": "unbuild"
 	},
 	"peerDependencies": {
 		"prettier": "^3.5.3"
 	},
 	"devDependencies": {
-		"typescript": "^5.8.3"
-	}
+		"typescript": "^5.8.3",
+		"unbuild": "^3.5.0"
+	},
+	"files": [
+		"dist"
+	]
 }

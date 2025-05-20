@@ -1,4 +1,13 @@
 {
-	"references": [{ "path": "./tsconfig.esm.json" }, { "path": "./tsconfig.cjs.json" }],
-	"files": []
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"outDir": "dist",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ESNext"
+	},
+	"include": ["src"]
 }
