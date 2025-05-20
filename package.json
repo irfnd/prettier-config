@@ -7,6 +7,12 @@
 		"prettier-config"
 	],
 	"author": "Irfnd <irfandiabimanyu@gmail.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/irfnd/prettier-config.git"
+	},
+	"homepage": "https://github.com/irfnd/prettier-config",
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
