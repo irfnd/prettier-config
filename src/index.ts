@@ -1,6 +1,6 @@
 import { Config } from 'prettier';
 
-const config: Config = {
+const config = {
 	endOfLine: 'lf',
 	jsxSingleQuote: true,
 	printWidth: 130,
@@ -9,7 +9,7 @@ const config: Config = {
 	tabWidth: 2,
 	trailingComma: 'all',
 	useTabs: true,
-	plugins: ["prettier-plugin-organize-imports"],
-};
+	plugins: [require.resolve('prettier-plugin-organize-imports')],
+} satisfies Config;
 
 export default config;
