@@ -24,12 +24,14 @@
 	},
 	"scripts": {
 		"build": "unbuild",
+		"release": "release-it",
 		"prepublishOnly": "npm run build"
 	},
 	"peerDependencies": {
 		"prettier": "^3.5.3"
 	},
 	"devDependencies": {
+		"release-it": "^19.2.4",
 		"typescript": "^5.8.3",
 		"unbuild": "^3.5.0"
 	},
