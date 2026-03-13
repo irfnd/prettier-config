@@ -9,6 +9,7 @@ const config: Config = {
 	tabWidth: 2,
 	trailingComma: 'all',
 	useTabs: true,
+	plugins: ["prettier-plugin-organize-imports"],
 };
 
 export default config;
