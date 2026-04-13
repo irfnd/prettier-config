@@ -9,7 +9,7 @@ const config = {
 	tabWidth: 2,
 	trailingComma: 'all',
 	useTabs: true,
-	plugins: [require.resolve('prettier-plugin-organize-imports')],
+	plugins: ['prettier-plugin-organize-imports'],
 } satisfies Config;
 
 export default config;
