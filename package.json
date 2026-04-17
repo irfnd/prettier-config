@@ -13,13 +13,21 @@
 		"url": "git+https://github.com/irfnd/prettier-config.git"
 	},
 	"homepage": "https://github.com/irfnd/prettier-config",
-	"main": "dist/index.cjs",
+	"type": "module",
+	"main": "dist/index.mjs",
 	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
+	"types": "dist/index.d.mts",
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
+			"import": {
+				"types": "./dist/index.d.mts",
+				"default": "./dist/index.mjs"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			},
+			"default": "./dist/index.mjs"
 		}
 	},
 	"scripts": {
@@ -34,9 +42,9 @@
 		"prettier": "^3.5.3"
 	},
 	"devDependencies": {
-		"release-it": "^19.2.4",
-		"typescript": "^5.8.3",
-		"unbuild": "^3.5.0"
+		"release-it": "^20.0.0",
+		"typescript": "^6.0.3",
+		"unbuild": "^3.6.1"
 	},
 	"files": [
 		"dist"
